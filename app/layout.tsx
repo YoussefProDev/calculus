@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Simplify your calculations with advanced and intuitive tools.",
     images: ["/og-image.jpg"],
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+    url: `${process.env.VERCEL_URL}`,
     type: "website",
   },
   twitter: {

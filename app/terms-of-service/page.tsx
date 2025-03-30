@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Read the terms of service for using the Calculus app. Understand the rules and guidelines that govern your use of the app.",
     images: ["/og-image.jpg"],
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/terms-of-service`,
+    url: `${process.env.VERCEL_URL}/terms-of-service`,
     type: "website",
   },
   twitter: {

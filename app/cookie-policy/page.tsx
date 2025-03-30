@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Learn about our cookie policy and how we use cookies to enhance your experience with the Calculus app.",
     images: ["/og-image.jpg"],
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/cookie-policy`,
+    url: `${process.env.VERCEL_URL}/cookie-policy`,
     type: "website",
   },
   twitter: {
