@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Read our privacy policy to understand how we protect your personal information and your rights while using the Calculus app.",
     images: ["/og-image.jpg"],
-    url: `${process.env.VERCEL_URL}/privacy-policy`,
+    url: `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}/privacy-policy`,
     type: "website",
   },
   twitter: {

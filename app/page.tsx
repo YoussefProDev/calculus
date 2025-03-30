@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "Simplify your calculations with advanced and intuitive tools.",
     images: ["/og-image.jpg"],
-    url: `${process.env.VERCEL_URL}`,
+    url: `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`,
     type: "website",
   },
   twitter: {

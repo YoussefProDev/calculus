@@ -3,7 +3,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.VERCEL_URL;
+  const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
   return [
     {
