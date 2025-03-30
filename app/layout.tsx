@@ -12,7 +12,8 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { footerLinks, navbarLinks } from "@/lib/links";
-
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -146,6 +147,8 @@ export default function RootLayout({
         >
           <ChevronUp className="h-5 w-5" />
         </a>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
