@@ -1,7 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { appName, lastUpdated, supportEmail } from "@/lib/constants";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Terms of Service - Calculus",
+  description:
+    "Read the terms of service for using the Calculus app. Understand the rules and guidelines that govern your use of the app.",
+  keywords: "terms of service, user agreement, app usage, legal terms",
+  openGraph: {
+    title: "Terms of Service - Calculus",
+    description:
+      "Read the terms of service for using the Calculus app. Understand the rules and guidelines that govern your use of the app.",
+    images: ["/og-image.jpg"],
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/terms-of-service`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service - Calculus",
+    description:
+      "Read the terms of service for using the Calculus app. Understand the rules and guidelines that govern your use of the app.",
+    images: ["/og-image.jpg"],
+  },
+};
 export default function TermsOfService() {
   return (
     <Container className="py-10">
@@ -16,8 +37,8 @@ export default function TermsOfService() {
 
           <h2 className="text-xl font-semibold">1. Use of the App</h2>
           <p>
-            The App is provided &ldquo;as is&ldquo; without any warranties. Users assume
-            responsibility for their use of the App.
+            The App is provided &ldquo;as is&ldquo; without any warranties.
+            Users assume responsibility for their use of the App.
           </p>
 
           <h2 className="text-xl font-semibold">2. Third-Party Services</h2>

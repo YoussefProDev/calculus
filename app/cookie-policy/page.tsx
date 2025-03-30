@@ -2,6 +2,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { appName, lastUpdated, supportEmail } from "@/lib/constants";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cookie Policy - Calculus",
+  description:
+    "Learn about our cookie policy and how we use cookies to enhance your experience with the Calculus app.",
+  keywords: "cookie policy, cookies, privacy, app cookies",
+  openGraph: {
+    title: "Cookie Policy - Calculus",
+    description:
+      "Learn about our cookie policy and how we use cookies to enhance your experience with the Calculus app.",
+    images: ["/og-image.jpg"],
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/cookie-policy`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cookie Policy - Calculus",
+    description:
+      "Learn about our cookie policy and how we use cookies to enhance your experience with the Calculus app.",
+    images: ["/og-image.jpg"],
+  },
+};
+
 export default function CookiePolicy() {
   return (
     <Container className="py-10">

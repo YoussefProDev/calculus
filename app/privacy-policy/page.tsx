@@ -2,6 +2,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { appName, lastUpdated, supportEmail } from "@/lib/constants";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Calculus",
+  description:
+    "Read our privacy policy to understand how we protect your personal information and your rights while using the Calculus app.",
+  keywords: "privacy policy, personal data, user privacy, app privacy",
+  openGraph: {
+    title: "Privacy Policy - Calculus",
+    description:
+      "Read our privacy policy to understand how we protect your personal information and your rights while using the Calculus app.",
+    images: ["/og-image.jpg"],
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/privacy-policy`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - Calculus",
+    description:
+      "Read our privacy policy to understand how we protect your personal information and your rights while using the Calculus app.",
+    images: ["/og-image.jpg"],
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <Container className="py-10">
@@ -23,8 +47,8 @@ export default function PrivacyPolicy() {
           <p>
             The App uses a third-party API to retrieve exchange rates. The use
             of this API may involve collecting anonymous data, such as IP
-            addresses or request-related data, according to the API provider&apos;s
-            policies.
+            addresses or request-related data, according to the API
+            provider&apos;s policies.
           </p>
 
           <h2 className="text-xl font-semibold">2. Use of Information</h2>
