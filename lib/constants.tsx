@@ -2,13 +2,13 @@ import { Calculator } from "lucide-react";
 import { JSX } from "react";
 
 export const lastUpdated = "30 March 2024";
-export const appName = "Calculus";
+export const appName = "Calculus - Ultimate Math Tool";
 export const appDescription =
-  "Calculus is a powerful and user-friendly app designed to help you solve complex calculus problems with ease. Whether you're a student, teacher, or professional, our app provides the tools you need to tackle any calculus challenge.";
+  "Transform everyday calculations with Calculus! From basic math to currency exchange in one tap. Beautiful themes, stunning design, and powerful features.";
 export const appVersion = "1.0.0";
 export const appAuthor = "Shark Teams";
-export const supportEmail = "support@calculus.com";
-
+export const supportEmail = "contact.sharkteams@gmail.com";
+export const logoPath = "/light-icon.webp";
 interface feature {
   icon: JSX.Element;
   title: string;
@@ -19,7 +19,7 @@ interface feature {
 
 export const features: feature[] = [
   {
-    icon: <Calculator className="h-6 w-6 text-blue-600" />,
+    icon: <Calculator className="h-6 w-6 text-primary" />,
     title: "Standard Calculator",
     description: "Basic operations for everyday calculations",
     content: (
@@ -41,7 +41,7 @@ export const features: feature[] = [
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-blue-600"
+        className="text-primary"
       >
         <line x1="2" y1="12" x2="22" y2="12"></line>
         <polyline points="15 5 22 12 15 19"></polyline>
@@ -69,7 +69,7 @@ export const features: feature[] = [
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-blue-600"
+        className="text-primary"
       >
         <line x1="12" y1="2" x2="12" y2="22"></line>
         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
@@ -96,7 +96,7 @@ export const features: feature[] = [
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-blue-600"
+        className="text-primary"
       >
         <path d="M3 6h18"></path>
         <path d="M7 12h10"></path>
@@ -124,7 +124,7 @@ export const features: feature[] = [
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-blue-600"
+        className="text-primary"
       >
         <path d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z"></path>
         <path d="M12 12h.01"></path>
@@ -153,7 +153,7 @@ export const features: feature[] = [
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="text-blue-600"
+        className="text-primary"
       >
         <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10z"></path>
       </svg>
@@ -164,15 +164,15 @@ export const features: feature[] = [
     content: (
       <ul className="text-sm text-gray-500 dark:text-gray-400 space-y-2">
         <li className="flex items-center">
-          <div className="mr-2 h-2 w-2 rounded-full bg-blue-600"></div>
+          <div className="mr-2 h-2 w-2 rounded-full text-secondary"></div>
           Differential Calculus
         </li>
         <li className="flex items-center">
-          <div className="mr-2 h-2 w-2 rounded-full bg-blue-600"></div>
+          <div className="mr-2 h-2 w-2 rounded-full text-secondary"></div>
           Integral Calculus
         </li>
         <li className="flex items-center">
-          <div className="mr-2 h-2 w-2 rounded-full bg-blue-600"></div>
+          <div className="mr-2 h-2 w-2 rounded-full text-secondary"></div>
           Matrix Operations
         </li>
       </ul>

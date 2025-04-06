@@ -19,10 +19,10 @@ export function ContactUsSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Email Section */}
             <div className="flex flex-col items-center space-y-3">
-              <Mail className="h-10 w-10 text-blue-600 dark:text-blue-400" />
+              <Mail className="h-10 w-10 text-primary dark:text-blue-400" />
               <a
                 href="mailto:support@calculus.com"
-                className="text-lg font-medium text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-lg font-medium text-primary dark:text-blue-400 hover:underline"
               >
                 {supportEmail}
               </a>

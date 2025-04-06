@@ -14,6 +14,7 @@ import {
 import { footerLinks, navbarLinks } from "@/lib/links";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Logo from "@/components/Logo";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -60,7 +61,8 @@ export default function RootLayout({
           <header className="sticky top-0 z-40 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-gray-950/95 dark:border-gray-800 px-5 flex justify-center">
             <div className="container flex h-16 items-center">
               <Link href="/" className="flex items-center space-x-2">
-                <Calculator className="h-6 w-6 text-blue-600" />
+                {/* <Calculator className="h-6 w-6 text-blue-600" /> */}
+                <Logo />
                 <span className="text-xl font-bold">Calculus</span>
               </Link>
 
@@ -143,7 +145,7 @@ export default function RootLayout({
         {/* Back to top button */}
         <a
           href="#"
-          className="fixed bottom-6 right-6 p-2 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
+          className="fixed bottom-6 right-6 p-2 bg-primary text-white rounded-full shadow-lg hover:bg-muted focus:outline-none"
         >
           <ChevronUp className="h-5 w-5" />
         </a>

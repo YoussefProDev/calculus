@@ -5,6 +5,7 @@ import FeaturesSection from "@/components/features";
 import HeroSection from "@/components/heroSection";
 import AppInfo from "@/components/appInfo";
 import { Metadata } from "next";
+import { appAuthor, appDescription } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Calculus - Enhance Your Mathematical Calculations",
   description:
@@ -22,8 +23,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Calculus - Enhance Your Mathematical Calculations",
-    description:
-      "Simplify your calculations with advanced and intuitive tools.",
+    description: appDescription,
+    creator: appAuthor,
     images: ["/og-image.jpg"],
   },
 };
